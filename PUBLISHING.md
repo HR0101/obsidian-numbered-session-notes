@@ -1,6 +1,6 @@
 # 公開の手順（Obsidian コミュニティプラグイン）
 
-状態：公開の直前まで準備済み（2026-10-13）．GitHub への push と申請はまだしていない．
+状態：公開の直前まで準備済み．2026-10-19 に GitHub の**非公開**リポジトリ [HR0101/obsidian-numbered-session-notes](https://github.com/HR0101/obsidian-numbered-session-notes) へ push 済み．公開（リポジトリの公開・リリース・申請）はまだしていない．
 
 ## 準備できているもの
 
@@ -17,12 +17,11 @@
 
 公式の手順（[Submit your plugin](https://docs.obsidian.md/Plugins/Releasing/Submit+your+plugin)）が変わっていることがあるので，始める前に確かめる．
 
-1. GitHub に公開リポジトリを作る（例：`HR0101/obsidian-numbered-session-notes`）．
-2. push する．
+1. リポジトリを公開にする（コミュニティプラグインは公開リポジトリが必要）．
    ```bash
-   git remote add origin git@github.com:HR0101/obsidian-numbered-session-notes.git
-   git push -u origin main
+   gh repo edit HR0101/obsidian-numbered-session-notes --visibility public --accept-visibility-change-consequences
    ```
+2. 最新の変更を push しておく（`git push`）．
 3. 版のタグを push する（`v` を付けず，manifest の版と同じにする）．
    ```bash
    git tag 1.0.0
