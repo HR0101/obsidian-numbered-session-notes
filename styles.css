@@ -1,0 +1,33 @@
+/* 作成ダイアログのプレビュー */
+.numbered-session-notes-preview {
+  margin: var(--size-4-2) 0;
+  color: var(--text-muted);
+  word-break: break-all;
+}
+
+.numbered-session-notes-error {
+  color: var(--text-error);
+}
+
+/* 設定画面の開催曜日のチェックボックス */
+.numbered-session-notes-weekdays {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--size-4-2);
+}
+
+.numbered-session-notes-weekday {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--size-2-1);
+}
+
+.numbered-session-notes-wide {
+  width: 100%;
+  min-width: 16em;
+}
+
+.numbered-session-notes-help {
+  color: var(--text-muted);
+  font-size: var(--font-ui-small);
+}
